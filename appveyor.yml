@@ -13,8 +13,8 @@ test_script:
 - echo -en "123\\ny\\nn\\n" | cat
 - cmd: echo "cmd aaa" | cat
 - cmd: echo -en "cmd 123\\ny\\nn\\n" | cat
-# - ps: echo "ps aaa" | cat
-# - ps: echo -en "ps 123\\ny\\nn\\n" | cat
+- ps: "ps aaa" | cat
+- ps: "ps 123`ny`nn`n" | cat
 - echo --help
 - echo /?
 - cmd: echo /?
