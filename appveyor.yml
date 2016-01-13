@@ -13,8 +13,8 @@ test_script:
 - echo -en "123\\ny\\nn\\n" | cat
 - cmd: echo "cmd aaa" | cat
 - cmd: echo -en "cmd 123\\ny\\nn\\n" | cat
-- ps: "ps aaa" | cat
-- ps: "ps 123`ny`nn`n" | cat
+- ps: Write-Host "ps aaa" | Get-Content
+- ps: Write-Host "ps 123`ny`nn`n" | Get-Content
 - echo --help
 - echo /?
 - cmd: echo /?
