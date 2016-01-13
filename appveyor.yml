@@ -4,6 +4,11 @@ test_script:
 - echo "aaa" | cat
 - echo "a\naa" | cat
 - echo -en "123\\ny\\nn\\n" | cat
-- cmd: echo "aaa" | cat
-- cmd: echo -en "123\\ny\\nn\\n" | cat
-
+- cmd: echo "cmd aaa" | cat
+- cmd: echo -en "cmd 123\\ny\\nn\\n" | cat
+- ps: echo "ps aaa" | cat
+- ps: echo -en "ps 123\\ny\\nn\\n" | cat
+- echo --help
+- echo /?
+- cmd: echo /?
+- ps: echo -help
