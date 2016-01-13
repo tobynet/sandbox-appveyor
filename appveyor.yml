@@ -1,0 +1,9 @@
+build: off
+
+test_script:
+- echo "aaa" | cat
+- echo "a\naa" | cat
+- echo -en "123\\ny\\nn\\n" | cat
+- cmd: echo "aaa" | cat
+- cmd: echo -en "123\\ny\\nn\\n" | cat
+
