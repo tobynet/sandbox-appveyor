@@ -2,13 +2,20 @@ build: off
 
 test_script:
 - echo "aaa" | cat
-- echo aa^
-    
-    aa | cat
-- echo aa^
+- |
+  echo aa^
+  
+  aa | cat
+- |
+    echo aa^
     
     aa^
     y | cat
+- |
+    echo aa^
+    
+    aa^
+    y
 - echo "a\naa" | cat
 - echo -en "123\\ny\\nn\\n" | cat
 - cmd: echo "cmd aaa" | cat
